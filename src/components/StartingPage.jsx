@@ -4,7 +4,7 @@ import Carousel from "./Carousel";
 const StartingPage = () => {
   return (
     <>
-      <div className="min-h-screen flex items-center justify-center px-6 py-10 bg-[url('/tn_wallpaper.webp')] bg-cover bg-center bg-no-repeat">
+      <div className="min-h-screen flex items-center justify-center px-6 py-10 bg-gradient-to-b from-black via-slate-950 to-blue-950">
         <div className="w-full max-w-5xl rounded-3xl px-7 py-8 md:px-9 md:py-9 bg-gradient-to-br from-slate-900/95 to-indigo-800/90 shadow-[0_32px_80px_rgba(15,23,42,0.7)] text-slate-100 grid grid-cols-[minmax(0,1.25fr)_minmax(0,1.1fr)] gap-8 max-md:grid-cols-1">
           {/* Left: text content */}
           <div className="flex flex-col gap-4.5">
