@@ -8,13 +8,14 @@ import Page from '../page/Page'
 
 const RoutePath = () => {
   return (
-     <Routes>
+    
+     <Routes >
 
         {/* Pages WITH Navbar */}
         <Route path="/" element={<Page/>}>
           <Route index element={<StartingPage/>} />
         </Route>
-
+      
         {/* Pages WITHOUT Navbar */}
         <Route path="/login" element={<Login/>} />
         <Route path="/register" element={<Register/>} />
