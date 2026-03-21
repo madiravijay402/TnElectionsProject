@@ -5,30 +5,26 @@ const Login = () => {
     
   return (
     <>
-    <div>
-    <div className='flex'>
-        <div>
-            <img src="/tnLogo.png" alt="" className='w-50'/>
+    <div className='min-h-screen bg-slate-100 flex flex-col items-center justify-center px-4 py-8'>
+      <div className='flex items-center gap-4 mb-8'>
+        <img src="/TnSymbol.png" alt="Tamil Nadu logo" className='w-16 h-16 object-contain'/>
+        <div className='text-slate-900'>
+          <h1 className='font-bold text-xl'>TAMIL NADU</h1>
+          <h2 className='text-sm text-slate-600'>ASSEMBLY ELECTIONS 2026</h2>
         </div>
-        
-         <div className='text-black'>
-            <h1 className='text-bold'>TAMIL NADU</h1>
-            <h2>ASSEMBLY ELECTIONS 2026</h2>
+      </div>
+
+      <div className='w-full max-w-md bg-white rounded-xl border border-slate-200 shadow-sm p-6'>
+        <div className='flex flex-col gap-3'>
+          <label className='text-sm text-slate-700'>Name</label>
+          <input type="text" className='h-10 px-3 bg-slate-50 border border-slate-300 rounded-md outline-none focus:ring-2 focus:ring-blue-300'/>
+          <label className='text-sm text-slate-700'>Voter id</label>
+          <input type="text"  className='h-10 px-3 bg-slate-50 border border-slate-300 rounded-md outline-none focus:ring-2 focus:ring-blue-300' />
         </div>
-    </div>
-    
-    
-        <div className='bg-black mx-50 my-50 w-75 h-60 rounded-2xl border-2 border-black flex flex-col text-white justify-center items-center p-2'>
-            <div className='flex flex-col gap-2 '>
-                <label >Name</label>
-                <input type="text" className='bg-white rounded'/>
-                <label>Voter id</label>
-                <input type="text"  className='bg-white rounded' />
-            </div>
-            <div className='my-5'>
-                <input type="submit" value={"Login"}  className='bg-white text-black rounded-2xl p-2 hover:bg-yellow-500'/>
-            </div>
+        <div className='mt-6'>
+          <input type="submit" value={"Login"}  className='w-full h-10 bg-slate-900 text-white rounded-md hover:bg-slate-800 transition-colors'/>
         </div>
+      </div>
     </div>
     </>
   )
