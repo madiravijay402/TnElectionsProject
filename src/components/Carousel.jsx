@@ -4,7 +4,7 @@ const images = [
   "/MK_Stalin.jpg",
   "/TVKcheif.jpg",
   "/Palanisamy.jpg",
-  "/seeman.jpg",
+  "/seemanOG.jpg",
 ];
 
 const Carousel = () => {
