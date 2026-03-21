@@ -37,15 +37,7 @@ const StartingPage = () => {
               <span className="font-semibold">234 constituencies</span>.
             </p>
 
-            {/* <div className="flex flex-wrap gap-3 mt-1.5">
-              <button className="px-4.5 py-2.5 rounded-full text-[0.8rem] font-semibold cursor-pointer bg-gradient-to-r from-orange-500 via-orange-400 to-yellow-300 text-slate-900 shadow-[0_16px_35px_rgba(248,250,252,0.45)]">
-                Explore 2026 Landscape
-              </button>
-
-              <button className="px-4 py-2.5 rounded-full border border-slate-400/70 text-[0.8rem] font-medium cursor-pointer bg-slate-900/60 text-slate-100 flex items-center gap-1.5">
-                <span>View party profiles</span>
-              </button>
-            </div> */}
+           
 
             <div className="mt-4 flex flex-wrap gap-3 text-[0.7rem] text-slate-400">
               <span>• Election Commission of India</span>
