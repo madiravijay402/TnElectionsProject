@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
-  const[data,setData]=useState({name:"",email:"",phone:"",aadhar:""})
-  const handlechange=()=>{
-      
+  // const[data,setData]=useState({name:"",email:"",phone:"",aadhar:""})
+  const handlechange=(e)=>{
+      if(e.target.value.trim()===""){
+        alert("fill the details")
+      }
   }
   const navigate = useNavigate();
 
@@ -19,13 +21,13 @@ const Register = () => {
         <h2 className='text-xl font-semibold text-slate-900 mb-5'>Register</h2>
         <form onSubmit={handleSubmit} className='flex flex-col text-slate-700 gap-3'>
           <label>Name</label>
-          <input type="text" onChange={handlechange} placeholder="Name" name='name' className='h-10 px-3 bg-slate-50 text-black border border-slate-300 rounded-md outline-none focus:ring-2 focus:ring-blue-300' />
+          <input type="text" required onChange={handlechange} placeholder="Name" name='name' className='h-10 px-3 bg-slate-50 text-black border border-slate-300 rounded-md outline-none focus:ring-2 focus:ring-blue-300' />
           <label>Email</label>
-          <input type="email"  onChange={handlechange} placeholder="Email" name='email' className='h-10 px-3 bg-slate-50 text-black border border-slate-300 rounded-md outline-none focus:ring-2 focus:ring-blue-300'/>
+          <input type="email" required  onChange={handlechange} placeholder="Email" name='email' className='h-10 px-3 bg-slate-50 text-black border border-slate-300 rounded-md outline-none focus:ring-2 focus:ring-blue-300'/>
           <label>Phone</label>
-          <input type="tel"  onChange={handlechange} placeholder="Phone" name='phone' className='h-10 px-3 bg-slate-50 text-black border border-slate-300 rounded-md outline-none focus:ring-2 focus:ring-blue-300'/>
+          <input type="tel" required onChange={handlechange} placeholder="Phone" name='phone' className='h-10 px-3 bg-slate-50 text-black border border-slate-300 rounded-md outline-none focus:ring-2 focus:ring-blue-300'/>
           <label>Aadhar</label>
-          <input type="number"  onChange={handlechange} placeholder="Aadhaar No" name='aadhar' className='h-10 px-3 bg-slate-50 text-black border border-slate-300 rounded-md outline-none focus:ring-2 focus:ring-blue-300'/>
+          <input type="number" required onChange={handlechange} placeholder="Aadhaar No" name='aadhar' className='h-10 px-3 bg-slate-50 text-black border border-slate-300 rounded-md outline-none focus:ring-2 focus:ring-blue-300'/>
           <button type="submit" className='mt-2 h-10 bg-slate-900 text-white rounded-md hover:bg-slate-800 transition-colors'>Register</button>
         </form>
       </div>

@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 const NavBar = () => {
   return (
     <>
-    <div className='bg-slate-950 border-b border-slate-800 flex justify-between items-center px-4 md:px-8 py-3 md:py-4'>
+    <div className='bg-slate-950 border-b border-slate-800 flex justify-between items-center px-4 md:px-8 py-3 md:py-4 fixed w-382'>
         <div className='w-16 md:w-20 shrink-0'>
             <img src="/TnSymbol.png" alt="Tamil Nadu symbol" className='w-full h-full object-contain' />
         </div>
