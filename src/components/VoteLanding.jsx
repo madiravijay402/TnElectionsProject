@@ -1,16 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import CandidateCard from "./CandidateCard";
 import VoteConfirmPanel from "./VoteConfirmPanel";
 
-const candidates = [
-  { id: "dmk",name: "M. K. Stalin", party: "DMK", image: "/MK_Stalin.jpg" },
-  { id: "tvk", name: "Vijay", party: "TVK", image: "/TVKcheif.jpg"},
-  { id: "aiadmk", name: "Edappadi K. Palaniswami", party: "AIADMK", image: "/Palanisamy.jpg"},
-  { id: "ntk", name: "Seeman", party: "NTK", image: "/seemanOG.jpg" },
-];
+
 
 const VoteLanding = ({ hasVoted, setHasVoted, selectedCandidateId, setSelectedCandidateId, voteCounts, setVoteCounts,}) => {
+  const [candidates] = useState([
+    { id: "dmk",name: "M. K. Stalin", party: "DMK", image: "/MK_Stalin.jpg" },
+    { id: "tvk", name: "Vijay", party: "TVK", image: "/TVKcheif.jpg"},
+    { id: "aiadmk", name: "Edappadi K. Palaniswami", party: "AIADMK", image: "/Palanisamy.jpg"},
+    { id: "ntk", name: "Seeman", party: "NTK", image: "/seemanOG.jpg" },
+  ]);
   const navigate = useNavigate();
 
   const handleSelectCandidate = (candidateId) => {

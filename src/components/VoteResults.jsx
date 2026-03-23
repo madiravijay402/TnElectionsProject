@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
-const candidates = [
-  { id: "dmk", name: "M. K. Stalin", party: "DMK" },
-  { id: "tvk", name: "Vijay", party: "TVK" },
-  { id: "aiadmk", name: "Edappadi K. Palaniswami", party: "AIADMK" },
-  { id: "ntk", name: "Seeman", party: "NTK" },
-];
+
 
 const VoteResults = ({ voteCounts }) => {
+  const [candidates] = useState([
+    { id: "dmk", name: "M. K. Stalin", party: "DMK" },
+    { id: "tvk", name: "Vijay", party: "TVK" },
+    { id: "aiadmk", name: "Edappadi K. Palaniswami", party: "AIADMK" },
+    { id: "ntk", name: "Seeman", party: "NTK" },
+  ]);
   return (
     <div className="min-h-screen bg-slate-100 px-4 py-8">
       <div className="max-w-4xl mx-auto">

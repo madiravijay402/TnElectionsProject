@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 
-const images = [
-  "/MK_Stalin.jpg",
-  "/TVKcheif.jpg",
-  "/Palanisamy.jpg",
-  "/seemanOG.jpg",
-];
-
 const Carousel = () => {
+  const [images] = useState([
+    "/MK_Stalin.jpg",
+    "/TVKcheif.jpg",
+    "/Palanisamy.jpg",
+    "/seemanOG.jpg",
+  ]);
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
