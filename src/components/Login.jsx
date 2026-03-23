@@ -56,7 +56,7 @@ const Login = ({ onLogin }) => {
         className="w-full max-w-md bg-white rounded-xl border border-slate-200 shadow-sm p-6"
       >
         <div className="flex flex-col gap-3">
-         <label htmlFor="">277586278640</label>
+         
           <label className="text-sm text-slate-700">Aadhaar Number</label>
           <input
             type="number"
@@ -67,6 +67,9 @@ const Login = ({ onLogin }) => {
             placeholder="Enter your Aadhaar number"
             className="h-10 px-3 bg-slate-50 border border-slate-300 rounded-md outline-none focus:ring-2 focus:ring-blue-300"
           />
+          <p className="text-xs text-slate-500 mt-1">
+            Suggestion (dummy): 277586278640
+          </p>
         </div>
 
         <div className="mt-6">
