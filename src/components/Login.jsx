@@ -56,6 +56,7 @@ const Login = ({ onLogin }) => {
         className="w-full max-w-md bg-white rounded-xl border border-slate-200 shadow-sm p-6"
       >
         <div className="flex flex-col gap-3">
+         <label htmlFor="">277586278640</label>
           <label className="text-sm text-slate-700">Aadhaar Number</label>
           <input
             type="number"
